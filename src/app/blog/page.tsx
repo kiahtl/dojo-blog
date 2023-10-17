@@ -1,12 +1,14 @@
-import Tile from "../../components/tile";
+import { Header } from "@/components/header";
+import { Gallery } from "@/components/gallery";
+import { default as content } from "../../content/blog-gallery.json";
 
 export default function Blog() {
-    return (
-        <main className="flex min-h-screen flex-col items-center justify-center p-24">
-        <div className="text-center">
-            <h1 className="text-4xl mb-6">Welcome to the Dojo Blog</h1>
-        </div>
-        <Tile />
-        </main>
-    );
+  return (
+    <>
+      <main className="flex min-h-screen flex-col items-center p-12">
+        <Header {...content.header} />
+        <Gallery articles={content.articles} />
+      </main>
+    </>
+  );
 }
