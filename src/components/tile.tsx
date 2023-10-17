@@ -19,8 +19,9 @@ export function Tile({ article }: TileProps) {
           <Image
             src={article.image}
             alt={article.title}
-            layout="fill"
-            objectFit="cover"
+            sizes="500px"
+            fill
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div className="p-4 flex-1 flex flex-col justify-between">
