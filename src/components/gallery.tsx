@@ -1,4 +1,6 @@
 import { Tile } from "./tile";
+import { useState } from "react";
+import { ToggleButton } from "@/components/toggle-button";
 
 type GalleryProps = {
   articles: Array<{
@@ -9,12 +11,19 @@ type GalleryProps = {
     title: string;
     readTime: string;
   }>;
+  toggleOptions: string[];
 };
 
-export function Gallery({ articles }: GalleryProps) {
+export function Gallery({ articles, toggleOptions }: GalleryProps) {
+  const [selectedOption, setSelectedOption] = useState(toggleOptions[0]);
   return (
     <>
-      <ul className="grid grid-cols-3 gap-6 justify-center">
+      <ToggleButton
+        options={toggleOptions}
+        selected={selectedOption}
+        onToggle={setSelectedOption}
+      />
+      <ul className="mt-16 grid grid-cols-3 gap-6 justify-center">
         {articles.map((article) => (
           <Tile key={article.id} article={article} />
         ))}

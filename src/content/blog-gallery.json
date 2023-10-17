@@ -4,7 +4,7 @@
     "subheading": "Advice, real stories and industry insights - tailored for independent business owners."
   },
   "toggleButton": {
-    "toggleOptions": ["Latest Articles", "Case Studies"]
+    "options": ["Latest Articles", "Case Studies"]
   },
   "articles": [
     {
