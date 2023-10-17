@@ -9,50 +9,50 @@
   "articles": [
     {
       "id": "1",
-      "image": "/path/to/image1.jpg",
-      "category": "Development",
-      "date": "October 16, 2023",
-      "title": "Introducing the Latest in Web Development",
+      "image": "/images/blog-posts/small-business-banking.png",
+      "category": "Business Advice",
+      "date": "October 03, 2023",
+      "title": "Do I Need a Business Bank Account if I Run a Small Business?",
       "readTime": "5 min read"
     },
     {
       "id": "2",
-      "image": "/path/to/image2.jpg",
-      "category": "Design",
+      "image": "/images/blog-posts/marketing-strategies.png",
+      "category": "Intelligence & Data",
       "date": "October 14, 2023",
-      "title": "Design Trends for 2023: What to Look Out For",
+      "title": "The Most Effective Marketing Strategies in the Digital Age.",
       "readTime": "7 min read"
     },
     {
       "id": "3",
-      "image": "/path/to/image3.jpg",
-      "category": "Tech News",
+      "image": "/images/blog-posts/maternity-pay.png",
+      "category": "Business Advice",
       "date": "October 12, 2023",
-      "title": "Tech Giants Announce New Collaborative Project",
+      "title": "Maternity leave pay in the UK",
       "readTime": "4 min read"
     },
     {
       "id": "4",
-      "image": "/path/to/image4.jpg",
-      "category": "Development",
+      "image": "/images/blog-posts/minimum-holiday.png",
+      "category": "Business Advice",
       "date": "October 10, 2023",
-      "title": "Exploring the New Features in Framework X",
+      "title": "Minimum holiday entitlement in the UK",
       "readTime": "6 min read"
     },
     {
       "id": "5",
-      "image": "/path/to/image5.jpg",
-      "category": "Design",
+      "image": "/images/blog-posts/employers-insurance.png",
+      "category": "Business Advice",
       "date": "October 8, 2023",
-      "title": "UX Best Practices: Lessons from Top Companies",
+      "title": "Employers liability insurance in the UK",
       "readTime": "8 min read"
     },
     {
       "id": "6",
-      "image": "/path/to/image6.jpg",
-      "category": "Tech News",
+      "image": "/images/blog-posts/business-pricing.png",
+      "category": "Business Advice",
       "date": "October 6, 2023",
-      "title": "The Future of AI: Predictions and Insights",
+      "title": "Pricing strategies for businesses",
       "readTime": "5 min read"
     }
   ]
