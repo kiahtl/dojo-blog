@@ -1,3 +1,5 @@
+import { Tile } from "./tile";
+
 type GalleryProps = {
   articles: Array<{
     id: string;
@@ -12,25 +14,9 @@ type GalleryProps = {
 export function Gallery({ articles }: GalleryProps) {
   return (
     <>
-      <ul>
+      <ul className="grid grid-cols-3 gap-6 justify-center">
         {articles.map((article) => (
-          <li key={article.id}>
-            <article className="flex flex-col items-center justify-center w-full py-8">
-              <img src={article.image} />
-              <h3 className="text-4xs mb-6 text-gray-700 text-center">
-                {article.category}
-              </h3>
-              <h3 className="text-4xs mb-6 text-gray-700 text-center">
-                {article.date}
-              </h3>
-              <h3 className="text-4xs mb-6 text-gray-700 text-center">
-                {article.title}
-              </h3>
-              <h3 className="text-4xs mb-6 text-gray-700 text-center">
-                {article.readTime}
-              </h3>
-            </article>
-          </li>
+          <Tile key={article.id} article={article} />
         ))}
       </ul>
     </>
