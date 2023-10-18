@@ -1,6 +1,7 @@
 import { Tile } from "./tile";
 import { useState } from "react";
 import { ToggleButton } from "@/components/toggle-button";
+import { Pagination } from "./pagination";
 
 type GalleryProps = {
   articles: Array<{
@@ -16,6 +17,15 @@ type GalleryProps = {
 
 export function Gallery({ articles, toggleOptions }: GalleryProps) {
   const [selectedOption, setSelectedOption] = useState(toggleOptions[0]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const articlesPerPage = 6;
+  const totalPages = Math.ceil(articles.length / articlesPerPage);
+
+  const displayedArticles = articles.slice(
+    (currentPage - 1) * articlesPerPage,
+    currentPage * articlesPerPage
+  );
+
   return (
     <>
       <ToggleButton
@@ -24,10 +34,15 @@ export function Gallery({ articles, toggleOptions }: GalleryProps) {
         onToggle={setSelectedOption}
       />
       <ul className="mt-16 grid grid-cols-3 gap-6 justify-center">
-        {articles.map((article) => (
+        {displayedArticles.map((article) => (
           <Tile key={article.id} article={article} />
         ))}
       </ul>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={(page) => setCurrentPage(page)}
+      />
     </>
   );
 }

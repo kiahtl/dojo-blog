@@ -17,3 +17,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.bg-mintGreen {
+  background-color: #33a599;
+}
