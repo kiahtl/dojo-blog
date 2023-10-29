@@ -15,7 +15,7 @@ export function ToggleButton({
         <button
           key={option}
           className={`
-              flex-1 py-3 px-6 text-sm font-medium tracking-wide transition-colors whitespace-nowrap
+              flex-1 py-3 px-6 text-sm font-medium tracking-wide whitespace-nowrap
               ${
                 option === selected
                   ? "bg-gray-800 text-white rounded-full"
