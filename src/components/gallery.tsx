@@ -33,7 +33,7 @@ export function Gallery({ articles, toggleOptions }: GalleryProps) {
         selected={selectedOption}
         onToggle={setSelectedOption}
       />
-      <ul className="mt-16 grid grid-cols-3 gap-6 justify-center">
+      <ul className="mt-16 grid-flow-col gap-6 justify-center">
         {displayedArticles.map((article) => (
           <Tile key={article.id} article={article} />
         ))}
